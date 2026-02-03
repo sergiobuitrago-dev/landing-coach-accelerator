@@ -132,10 +132,38 @@
   .faq-item:hover {
     box-shadow: 0 0 40px rgba(34, 197, 94, 0.18);
   }
+
+  .faq-panel {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
+
+  .faq-panel--open {
+    max-height: 24rem;
+    opacity: 1;
+  }
 }
 
 @media (max-width: 768px) {
   .ambient-blob {
     display: none;
+  }
+
+  .faq-item {
+    transition: none;
+  }
+
+  .faq-item:hover {
+    box-shadow: none;
+  }
+
+  .faq-panel {
+    transition: none;
+  }
+
+  .faq-panel--open {
+    max-height: none;
   }
 }

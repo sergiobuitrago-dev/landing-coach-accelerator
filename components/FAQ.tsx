@@ -128,10 +128,8 @@ export default function FAQ() {
               </button>
 
               <div
-                className={`transition-all duration-300 ease-in-out ${
-                  openIndex === index
-                    ? "max-h-96 opacity-100"
-                    : "max-h-0 opacity-0"
+                className={`faq-panel ${
+                  openIndex === index ? "faq-panel--open" : ""
                 }`}>
                 <div className="px-6 pb-6">
                   <p className="text-stone-300 leading-relaxed font-light">

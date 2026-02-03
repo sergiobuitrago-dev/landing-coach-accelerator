@@ -1,5 +1,3 @@
-"use client";
-
 const CHECKOUT_URL = "https://whop.com/checkout/plan_PGgPby3Msd1w8";
 
 export default function CTA() {

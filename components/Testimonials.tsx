@@ -1,5 +1,3 @@
-'use client'
-
 const testimonials = [
   {
     result: '12 clientes',

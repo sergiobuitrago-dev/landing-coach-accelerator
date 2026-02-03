@@ -1,5 +1,3 @@
-'use client'
-
 const stats = [
   {
     value: '30 Días',

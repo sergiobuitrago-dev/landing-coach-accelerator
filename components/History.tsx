@@ -1,5 +1,3 @@
-"use client";
-
 export default function History() {
   return (
     <section className="section-pad">
@@ -17,6 +15,8 @@ export default function History() {
                 src="/images/Sergio-history2.svg"
                 alt="Sergio"
                 className="relative w-full rounded-3xl border border-amber-300/40 object-cover bg-stone-900/40 shadow-[0_30px_80px_rgba(245,194,90,0.18)]"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>

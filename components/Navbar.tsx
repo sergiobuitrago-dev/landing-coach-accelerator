@@ -1,5 +1,3 @@
-"use client";
-
 const CHECKOUT_URL = "https://whop.com/checkout/plan_PGgPby3Msd1w8";
 
 export default function Navbar() {
@@ -12,6 +10,8 @@ export default function Navbar() {
               src="/images/IsotipoNoBG.svg"
               alt="Coach Factory"
               className="h-12 w-auto"
+              loading="eager"
+              decoding="async"
             />
           </div>
           <a

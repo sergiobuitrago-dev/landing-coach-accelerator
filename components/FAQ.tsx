@@ -33,6 +33,7 @@ const faqs = [
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [isCalendlyLoaded, setIsCalendlyLoaded] = useState(false);
 
   return (
     <section className="section-pad relative overflow-hidden">
@@ -54,16 +55,33 @@ export default function FAQ() {
             llamada y recibe apoyo personalizado cuando lo necesites.
           </p>
           <div className="mt-8">
-            <div
-              className="calendly-inline-widget w-full max-w-3xl mx-auto rounded-2xl border border-stone-800/60 bg-stone-950/40 overflow-hidden"
-              data-url="https://calendly.com/sbuitrago-rrss/30min?hide_event_type_details=1&hide_gdpr_banner=1&background_color=0a0a0a&text_color=e7e5e4&primary_color=fbbf24"
-              data-resize="true"
-              style={{ minWidth: "320px", height: "520px" }}
-            />
-            <Script
-              src="https://assets.calendly.com/assets/external/widget.js"
-              strategy="afterInteractive"
-            />
+            {!isCalendlyLoaded ? (
+              <div className="w-full max-w-3xl mx-auto rounded-2xl border border-stone-800/60 bg-stone-950/40 p-8">
+                <p className="text-stone-300 mb-6">
+                  Haz clic para cargar el calendario y elegir tu
+                  horario.
+                </p>
+                <button
+                  type="button"
+                  onClick={() => setIsCalendlyLoaded(true)}
+                  className="cta-primary">
+                  Agendar una Llamada
+                </button>
+              </div>
+            ) : (
+              <>
+                <div
+                  className="calendly-inline-widget w-full max-w-3xl mx-auto rounded-2xl border border-stone-800/60 bg-stone-950/40 overflow-hidden"
+                  data-url="https://calendly.com/sbuitrago-rrss/30min?hide_event_type_details=1&hide_gdpr_banner=1&background_color=0a0a0a&text_color=e7e5e4&primary_color=fbbf24"
+                  data-resize="true"
+                  style={{ minWidth: "320px", height: "520px" }}
+                />
+                <Script
+                  src="https://assets.calendly.com/assets/external/widget.js"
+                  strategy="lazyOnload"
+                />
+              </>
+            )}
           </div>
         </div>
 

@@ -1,5 +1,3 @@
-"use client";
-
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
 import Problem from "@/components/Problem";

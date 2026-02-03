@@ -1,5 +1,3 @@
-"use client";
-
 const features = [
   {
     title: "Sistema Winner de Contenido",
@@ -218,6 +216,8 @@ export default function Features() {
                     src="/images/IsotipoNoBG.svg"
                     alt="Coach Factory"
                     className="h-16 w-auto sm:h-20 -mt-1"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
               </div>

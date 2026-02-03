@@ -1,5 +1,3 @@
-"use client";
-
 export default function Opportunity() {
   return (
     <section className="section-pad">

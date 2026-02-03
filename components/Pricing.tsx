@@ -12,8 +12,8 @@ export default function Pricing() {
               <div className="absolute inset-0 bg-[linear-gradient(rgba(245,194,90,0.2)_1px,transparent_1px),linear-gradient(90deg,rgba(245,194,90,0.2)_1px,transparent_1px)] bg-[size:70px_70px]" />
             </div>
             {/* Background Glow */}
-            <div className="absolute -top-20 right-0 w-72 h-72 bg-amber-300/20 rounded-full blur-3xl" />
-            <div className="absolute -bottom-24 left-0 w-72 h-72 bg-amber-400/15 rounded-full blur-3xl" />
+            <div className="ambient-blob absolute -top-20 right-0 w-72 h-72 bg-amber-300/20 rounded-full blur-3xl" />
+            <div className="ambient-blob absolute -bottom-24 left-0 w-72 h-72 bg-amber-400/15 rounded-full blur-3xl" />
 
             <div className="relative z-10 text-center">
               {/* Guarantee Badge Image */}

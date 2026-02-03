@@ -5,9 +5,9 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
       <div className="absolute inset-0">
         <div className="absolute inset-0 grid-veil opacity-40" />
-        <div className="absolute -top-24 -left-20 w-96 h-96 rounded-full bg-amber-400/10 blur-[120px]" />
-        <div className="absolute top-40 -right-10 w-[28rem] h-[28rem] rounded-full bg-teal-400/10 blur-[140px]" />
-        <div className="absolute bottom-0 left-1/3 w-[36rem] h-[20rem] bg-gradient-to-r from-amber-500/10 via-transparent to-transparent blur-[120px]" />
+        <div className="ambient-blob absolute -top-24 -left-20 w-96 h-96 rounded-full bg-amber-400/10 blur-[120px]" />
+        <div className="ambient-blob absolute top-40 -right-10 w-[28rem] h-[28rem] rounded-full bg-teal-400/10 blur-[140px]" />
+        <div className="ambient-blob absolute bottom-0 left-1/3 w-[36rem] h-[20rem] bg-gradient-to-r from-amber-500/10 via-transparent to-transparent blur-[120px]" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">

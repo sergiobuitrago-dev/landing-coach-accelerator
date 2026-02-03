@@ -38,8 +38,8 @@ export default function FAQ() {
   return (
     <section className="section-pad relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute -top-32 left-1/2 h-[38rem] w-[52rem] -translate-x-1/2 rounded-full bg-blue-500/18 blur-[180px]" />
-        <div className="absolute top-48 right-[-8rem] h-[34rem] w-[34rem] rounded-full bg-blue-400/16 blur-[190px]" />
+        <div className="ambient-blob absolute -top-32 left-1/2 h-[38rem] w-[52rem] -translate-x-1/2 rounded-full bg-blue-500/18 blur-[180px]" />
+        <div className="ambient-blob absolute top-48 right-[-8rem] h-[34rem] w-[34rem] rounded-full bg-blue-400/16 blur-[190px]" />
       </div>
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Book a Call Section */}

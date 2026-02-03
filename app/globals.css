@@ -58,6 +58,8 @@
 
   .section-pad {
     @apply py-24 md:py-28;
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 1000px;
   }
 
   .panel {
@@ -129,5 +131,11 @@
 
   .faq-item:hover {
     box-shadow: 0 0 40px rgba(34, 197, 94, 0.18);
+  }
+}
+
+@media (max-width: 768px) {
+  .ambient-blob {
+    display: none;
   }
 }

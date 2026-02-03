@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 20 15% 6%;
+    --foreground: 36 28% 96%;
+    --sand: 36 28% 96%;
+    --ink: 20 15% 6%;
+    --amber: 42 90% 60%;
+    --mint: 165 45% 50%;
+    --copper: 15 75% 55%;
+  }
+
+  body {
+    @apply text-stone-100;
+    background: #000;
+    font-family:
+      var(--font-sans),
+      system-ui,
+      -apple-system,
+      sans-serif;
+    font-weight: 300;
+    letter-spacing: -0.01em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    letter-spacing: -0.02em;
+    font-weight: 400;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(
+      90deg,
+      #f6d58b,
+      #f0b357,
+      #d7834f
+    );
+  }
+
+  .yellow-script {
+    font-style: italic;
+    text-transform: lowercase;
+    font-weight: 600;
+    color: #f4c15f;
+  }
+
+  .section-pad {
+    @apply py-24 md:py-28;
+  }
+
+  .panel {
+    @apply bg-stone-900/70 border border-stone-700/60 rounded-2xl shadow-[0_25px_70px_rgba(0,0,0,0.45)];
+  }
+
+  .panel-soft {
+    @apply bg-stone-900/40 border border-stone-700/40 rounded-2xl;
+  }
+
+  .eyebrow {
+    @apply uppercase tracking-[0.32em] text-[0.65rem] text-amber-300/80 font-semibold;
+  }
+
+  .cta-primary {
+    @apply relative inline-flex items-center justify-center px-10 py-4 rounded-full font-extrabold uppercase tracking-[0.18em] text-stone-900 bg-gradient-to-r from-amber-200 via-amber-300 to-yellow-300 transition-all shadow-[0_18px_38px_rgba(245,194,90,0.45)] ring-1 ring-amber-100/40;
+    background-image: linear-gradient(90deg, #fde68a 0%, #fbbf24 40%, #fde047 100%);
+  }
+
+  .cta-primary::before {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    border-radius: inherit;
+    background: linear-gradient(180deg, rgba(255,255,255,0.35), rgba(255,255,255,0));
+    opacity: 0.7;
+    pointer-events: none;
+  }
+
+  .cta-primary:hover {
+    transform: translateY(-1px);
+    box-shadow:
+      0 22px 44px rgba(245, 194, 90, 0.55),
+      0 0 20px rgba(255, 244, 155, 0.55);
+  }
+
+  .cta-primary--compact {
+    @apply px-4 py-1.5 text-[0.8rem] tracking-[0.12em];
+  }
+
+  .cta-secondary {
+    @apply inline-flex items-center justify-center px-8 py-3 rounded-full font-extrabold uppercase tracking-[0.18em] text-amber-200 border border-amber-300/40 hover:border-amber-300 transition-colors;
+  }
+
+  .grid-veil {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+      linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.06) 1px,
+        transparent 1px
+      );
+    background-size: 80px 80px;
+    mask-image: radial-gradient(
+      circle at top,
+      rgba(0, 0, 0, 0.8),
+      transparent 70%
+    );
+  }
+
+  .calendly-inline-widget iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    margin: -12px;
+    width: calc(100% + 24px);
+    height: calc(100% + 24px);
+  }
+
+  .faq-item:hover {
+    box-shadow: 0 0 40px rgba(34, 197, 94, 0.18);
+  }
+}

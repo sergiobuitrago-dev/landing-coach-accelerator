@@ -25,7 +25,7 @@ export default function Home() {
 
       <Features />
       <Pricing />
-
+      {/* Esto es una prueba de commit */}
       <FAQ />
       <CTA />
       {/* <Stats /> */}

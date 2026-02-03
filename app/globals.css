@@ -151,6 +151,12 @@
     display: none;
   }
 
+  .hero-ambient .ambient-blob {
+    display: block;
+    opacity: 0.75;
+    filter: blur(80px);
+  }
+
   .faq-item {
     transition: none;
   }

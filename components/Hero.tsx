@@ -2,7 +2,7 @@ const CHECKOUT_URL = "https://whop.com/checkout/plan_PGgPby3Msd1w8";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
+    <section className="hero-ambient relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
       <div className="absolute inset-0">
         <div className="absolute inset-0 grid-veil opacity-40" />
         <div className="ambient-blob absolute -top-24 -left-20 w-96 h-96 rounded-full bg-amber-400/10 blur-[120px]" />

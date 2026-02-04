@@ -65,7 +65,8 @@ export default function Pricing() {
                 </p>
                 <p className="mt-6">
                   Pero tenemos una garantía mucho mejor que
-                  <span className="italic">
+                  <p> </p>
+                  <span className="font-semibold italic">
                     "devolver el total de la inversion":
                   </span>
                 </p>
